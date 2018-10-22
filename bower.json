@@ -1,0 +1,21 @@
+{
+  "name": "myproject",
+  "description": "Gulp Project",
+  "main": "index.js",
+  "authors": [
+    "Rostyslav Symonenko"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  }
+}
