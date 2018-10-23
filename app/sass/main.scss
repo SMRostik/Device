@@ -1,0 +1,44 @@
+@font-face{
+    font-family: "Gilroy";
+    src: url("../font/gilroyextrabold.woff");
+    font-weight: 700;
+}
+@font-face{
+    font-family: "Gilroy";
+    src: url("../font/gilroylight.woff");
+    font-weight: 300;
+}
+
+.header-main{
+    width: 1160px;
+    margin: 0 auto;
+    background: #f7e296;
+    margin-top: 40px;
+}
+.logo{
+    font-family: "Gilroy";
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    top: -28px;
+    padding-left: 60px;
+    &__text{
+        text-decoration: none;
+        color: #000;
+        &:hover{
+            color: #464646;
+        }
+        &:active{
+            color: #666666;
+        }
+    }
+}
+#menu-catalog{
+    display: none;
+
+    &:checked + .menu-catalog{
+        visibility: hidden;
+        background: #000;
+    }
+}
