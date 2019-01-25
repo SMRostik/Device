@@ -12,14 +12,186 @@
 			<div class="logo">
 				<a href="#" class="logo__text">Device</a>
 			</div>
-			<div class="panel">panel</div>
-			<div class="menu">menu
-				<label for="menu-catalog">label</label>
+			<div class="panel">
+				<div class="search">
+					<input class="search__text" type="text" placeholder="Поиск по сайту">
+					<button class="search__btn">Найти</button>
+				</div>
+				<div class="panel__menu">
+					<div class="panel__user">
+						<div class="panel__item-wrap"><a class="panel__item panel__item_enter" href="#">Войти</a></div>
+					</div>
+					<div class="panel__guest">
+						<div class="panel__item-wrap"><a class="panel__item panel__item_compare" href="#">Сравнить</a></div>
+						<div class="panel__item-wrap"><a class="panel__item panel__item_cart" href="#">Корзина</a></div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="menu">
+				<div class="menu__left">
+					<label for="menu-catalog">Каталог товаров</label>
+				</div>
+				<div class="menu__right">
+					<div class="menu__item-wrap"><a class="menu__item" href="#">Доставка</a></div>
+					<div class="menu__item-wrap"><a class="menu__item" href="#">Гарантия</a></div>
+					<div class="menu__item-wrap"><a class="menu__item" href="#">Контакты</a></div>
+				</div>
 			</div>
 			<input type="checkbox" name="a" id="menu-catalog">
 			<div class="menu-catalog">menu-catalog</div>
+			
+		</div>
+		<div class="slider-prod">
+			<input class="slider-prod__r" type="radio" name="sloder-prod" id="slider-prod-1" checked>
+			<div class="slider-prod__item">
+				<div class="slider-prod__left-block">
+					<img class="slider-prod__img" src="img/slide1.png" alt="">
+				</div>
+				<div class="slider-prod__right-block">
+					<div class="slider-prod__num">01</div>
+					<div class="slider-prod__title">Делай селфи,<br> как Бен Стиллер!</div>
+					<div class="slider-prod__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</div>
+					<a href="#" class="btn-more slider-prod__btn-more">
+						<div class="btn-more__block"></div>
+						<span class="btn-more__txt">Подробнее</span>
+					</a>
+					<div class="property slider-prod__property">
+						<div class="property__item">
+							<div class="property__value">8,5 м</div>
+							<div class="property__title">Длина палки</div>
+						</div>
+						<div class="property__item">
+							<div class="property__value">5 кг</div>
+							<div class="property__title">Вес палки</div>
+						</div>
+						<div class="property__item">
+							<div class="property__value">Карбон</div>
+							<div class="property__title">Материал</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<input class="slider-prod__r" type="radio" name="sloder-prod" id="slider-prod-2">
+			<div class="slider-prod__item">
+				<div class="slider-prod__left-block">
+					<img class="slider-prod__img" src="img/slide2.png" alt="">
+				</div>
+				<div class="slider-prod__right-block">
+					<div class="slider-prod__num">02</div>
+					<div class="slider-prod__title">Худеем<br> правильно!</div>
+					<div class="slider-prod__description">Мотивирующие фитнесс-браслеты помогут найти в себе силы 
+							не пропускать занятия и соблюдать диету.</div>
+					<a href="#" class="btn-more slider-prod__btn-more">
+						<div class="btn-more__block"></div>
+						<span class="btn-more__txt">Подробнее</span>
+					</a>
+					<div class="property slider-prod__property">
+						<div class="property__item">
+							<div class="property__value">48 часов</div>
+							<div class="property__title">Без подзарядки</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<input class="slider-prod__r" type="radio" name="sloder-prod" id="slider-prod-3">
+			<div class="slider-prod__item">
+				<div class="slider-prod__left-block">
+					<img class="slider-prod__img" src="img/slide3.png" alt="">
+				</div>
+				<div class="slider-prod__right-block">
+					<div class="slider-prod__num">03</div>
+					<div class="slider-prod__title">Порхает как бабочка,<br>
+							жалит как пчела!</div>
+					<div class="slider-prod__description">Этот обычный, на первый взгляд, квадрокоптер оснащен 
+							мощным лазером, замаскированным под стандартную камеру.
+					</div>
+					<a href="#" class="btn-more slider-prod__btn-more">
+						<div class="btn-more__block"></div>
+						<span class="btn-more__txt">Подробнее</span>
+					</a>
+					<div class="property slider-prod__property">
+						<div class="property__item">
+							<div class="property__value">800 м</div>
+							<div class="property__title">Дальность полета</div>
+						</div>
+						<div class="property__item">
+							<div class="property__value">50 кг</div>
+							<div class="property__title">Радиус поражения</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider-prod__btn-wrap">
+				<label class="slider-prod__btn" for="slider-prod-1"></label>
+				<label class="slider-prod__btn" for="slider-prod-2"></label>
+				<label class="slider-prod__btn" for="slider-prod-3"></label>
+			</div>
 		</div>
 	</header>
+	<section class="popular">
+		<article class="popular__item">
+			<div class="popular__img-wrap">
+				<div class="popular__img popular__img_vr"></div>
+			</div>
+			<h2 class="popular__title">Виртуальная рефльность</h2>
+		</article>
+		<article class="popular__item">
+			<div class="popular__img-wrap">
+				<div class="popular__img popular__img_monopad"></div>
+			</div>
+			<h2 class="popular__title">Монопады для селфи</h2>
+		</article>
+		<article class="popular__item">
+			<div class="popular__img-wrap">
+				<div class="popular__img popular__img_camera"></div>
+			</div>
+			<h2 class="popular__title">Экшн-камеры</h2>
+		</article>
+		<article class="popular__item">
+			<div class="popular__img-wrap">
+				<div class="popular__img popular__img_fitb"></div>
+			</div>
+			<h2 class="popular__title">Фитнесс браслеты</h2>
+		</article>
+		<article class="popular__item">
+			<div class="popular__img-wrap">
+				<div class="popular__img popular__img_sc"></div>
+			</div>
+			<h2 class="popular__title">Умные часы</h2>
+		</article>
+		<article class="popular__item">
+			<div class="popular__img-wrap">
+				<div class="popular__img popular__img_quadcopter"></div>
+			</div>
+			<h2 class="popular__title">Квадрокоптеры</h2>
+		</article>
+	</section>
+	<section class="services">
+		<div class="services__wrap">
+			<div class="sv-rb services__sv-rb">
+				<div class="sv-rb__item">a</div>
+				<div class="sv-rb__item">b</div>
+				<div class="sv-rb__item">c</div>
+			</div>
+			<div class="sv-lb services__sv-lb">
+				<div class="sv-lb__item">
+					<label class="sv-lb__block" for="slider-prod-1"></label>
+					<span class="sv-lb__txt">Доставка</span>
+				</div>
+				<div class="sv-lb__item">
+					<label class="sv-lb__block" for="slider-prod-1"></label>
+					<span class="sv-lb__txt">Гарантия</span>
+				</div>
+				<div class="sv-lb__item">
+					<label class="sv-lb__block" for="slider-prod-1"></label>
+					<span class="sv-lb__txt">Кредит</span>
+				</div>
+			</div> 
+		</div>
+	</section>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
