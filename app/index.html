@@ -171,27 +171,53 @@
 	</section>
 	<section class="services">
 		<div class="services__wrap">
+			<input class="services__r" type="radio" name="tab-services" id="tab-services-1" checked>
+			<input class="services__r" type="radio" name="tab-services" id="tab-services-2">
+			<input class="services__r" type="radio" name="tab-services" id="tab-services-3">
 			<div class="sv-rb services__sv-rb">
-				<div class="sv-rb__item">a</div>
-				<div class="sv-rb__item">b</div>
-				<div class="sv-rb__item">c</div>
+				<article class="sv-rb__item sv-rb__item_delivery">
+					<h3 class="sv-rb__title">Доставка</h3>
+					<div class="sv-rb__description">
+						<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+					</div>
+				</article>
+				<article class="sv-rb__item sv-rb__item_warranty">
+					<h3 class="sv-rb__title">Гарантия</h3>
+					<div class="sv-rb__description">
+						<p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+								Товар, не дом, конечно же.</p>
+					</div>
+				</article>
+				<article class="sv-rb__item sv-rb__item_credit">
+					<h3 class="sv-rb__title">Кредит</h3>
+					<div class="sv-rb__description">
+						<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные 
+								условия кредита. Выгодные для нашего банка, разумеется.</p>
+					</div>
+				</article>
 			</div>
 			<div class="sv-lb services__sv-lb">
-				<div class="sv-lb__item">
-					<label class="sv-lb__block" for="slider-prod-1"></label>
-					<span class="sv-lb__txt">Доставка</span>
-				</div>
-				<div class="sv-lb__item">
-					<label class="sv-lb__block" for="slider-prod-1"></label>
-					<span class="sv-lb__txt">Гарантия</span>
-				</div>
-				<div class="sv-lb__item">
-					<label class="sv-lb__block" for="slider-prod-1"></label>
-					<span class="sv-lb__txt">Кредит</span>
-				</div>
+				<label class="sv-lb__item" for="tab-services-1"><span class="sv-lb__txt">Доставка</span></label>
+				<label class="sv-lb__item" for="tab-services-2"><span class="sv-lb__txt">Гарантия</span></label>
+				<label class="sv-lb__item" for="tab-services-3"><span class="sv-lb__txt">Кредит</span></label>
 			</div> 
 		</div>
 	</section>
+	<section class="logotypes">
+		<div class="logotypes__item">
+			<img src="./img/logotypes1.jpg" alt="">
+		</div>
+		<div class="logotypes__item">
+			<img src="./img/logotypes2.jpg" alt="">
+		</div>
+		<div class="logotypes__item">
+			<img src="./img/logotypes3.jpg" alt="">
+		</div>
+		<div class="logotypes__item">
+			<img src="./img/logotypes4.jpg" alt="">
+		</div>
+	</section>
+	<label class="a" for="tab-services-3"><span>Доставка</span></label>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
