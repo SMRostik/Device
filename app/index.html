@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<header>
 		<div class="header-main">
-			<div class="logo">
+			<div class="logo header-main__logo">
 				<a href="#" class="logo__text">Device</a>
 			</div>
 			<div class="panel">
@@ -25,23 +26,35 @@
 						<div class="panel__item-wrap"><a class="panel__item panel__item_compare" href="#">Сравнить</a></div>
 						<div class="panel__item-wrap"><a class="panel__item panel__item_cart" href="#">Корзина</a></div>
 					</div>
-					
 				</div>
 			</div>
 			<div class="menu">
 				<div class="menu__left">
-					<label for="menu-catalog">Каталог товаров</label>
+					<label for="menu-catalog" class="menu__l-btn">Каталог товаров</label>
 				</div>
 				<div class="menu__right">
 					<div class="menu__item-wrap"><a class="menu__item" href="#">Доставка</a></div>
 					<div class="menu__item-wrap"><a class="menu__item" href="#">Гарантия</a></div>
-					<div class="menu__item-wrap"><a class="menu__item" href="#">Контакты</a></div>
+					<div class="menu__item-wrap menu__item menu__item-wrap_ml"><a class="menu__item menu__item_ml" href="#">Контакты</a></div>
 				</div>
 			</div>
 			<input type="checkbox" name="a" id="menu-catalog">
-			<div class="menu-catalog">menu-catalog</div>
-			
+			<div class="menu-catalog">
+				<div class="empty-block"></div>
+				<div class="menu-catalog__wrap">
+						<a href="#" class="menu-catalog__item">Виртуальная реальность</a>
+						<a href="#" class="menu-catalog__item">Моноподы для селфи</a>
+						<a href="#" class="menu-catalog__item">Экшн-камеры</a>
+						<a href="#" class="menu-catalog__item">Виртуальная реальность</a>
+						<a href="#" class="menu-catalog__item">Моноподы для селфи</a>
+						<a href="#" class="menu-catalog__item">Экшн-камеры</a>
+						<a href="#" class="menu-catalog__item">Виртуальная реальность</a>
+						<a href="#" class="menu-catalog__item">Моноподы для селфи</a>
+						<a href="#" class="menu-catalog__item">Экшн-камеры</a>
+				</div>
+			</div>
 		</div>
+
 		<div class="slider-prod">
 			<input class="slider-prod__r" type="radio" name="sloder-prod" id="slider-prod-1" checked>
 			<div class="slider-prod__item">
@@ -52,10 +65,7 @@
 					<div class="slider-prod__num">01</div>
 					<div class="slider-prod__title">Делай селфи,<br> как Бен Стиллер!</div>
 					<div class="slider-prod__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</div>
-					<a href="#" class="btn-more slider-prod__btn-more">
-						<div class="btn-more__block"></div>
-						<span class="btn-more__txt">Подробнее</span>
-					</a>
+					<a href="#" class="btn slider-prod__btn-more"><span class="btn__txt">Подробнее</span></a>
 					<div class="property slider-prod__property">
 						<div class="property__item">
 							<div class="property__value">8,5 м</div>
@@ -83,10 +93,7 @@
 					<div class="slider-prod__title">Худеем<br> правильно!</div>
 					<div class="slider-prod__description">Мотивирующие фитнесс-браслеты помогут найти в себе силы 
 							не пропускать занятия и соблюдать диету.</div>
-					<a href="#" class="btn-more slider-prod__btn-more">
-						<div class="btn-more__block"></div>
-						<span class="btn-more__txt">Подробнее</span>
-					</a>
+					<a href="#" class="btn slider-prod__btn-more"><span class="btn__txt">Подробнее</span></a>
 					<div class="property slider-prod__property">
 						<div class="property__item">
 							<div class="property__value">48 часов</div>
@@ -108,10 +115,7 @@
 					<div class="slider-prod__description">Этот обычный, на первый взгляд, квадрокоптер оснащен 
 							мощным лазером, замаскированным под стандартную камеру.
 					</div>
-					<a href="#" class="btn-more slider-prod__btn-more">
-						<div class="btn-more__block"></div>
-						<span class="btn-more__txt">Подробнее</span>
-					</a>
+					<a href="#" class="btn slider-prod__btn-more"><span class="btn__txt">Подробнее</span></a>
 					<div class="property slider-prod__property">
 						<div class="property__item">
 							<div class="property__value">800 м</div>
@@ -124,6 +128,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="slider-prod__btn-wrap">
 				<label class="slider-prod__btn" for="slider-prod-1"></label>
 				<label class="slider-prod__btn" for="slider-prod-2"></label>
@@ -131,49 +136,52 @@
 			</div>
 		</div>
 	</header>
+
 	<section class="popular">
-		<article class="popular__item">
+		<a href="#" class="popular__item">
 			<div class="popular__img-wrap">
 				<div class="popular__img popular__img_vr"></div>
 			</div>
 			<h2 class="popular__title">Виртуальная рефльность</h2>
-		</article>
-		<article class="popular__item">
+		</a>
+		<a href="#" class="popular__item">
 			<div class="popular__img-wrap">
 				<div class="popular__img popular__img_monopad"></div>
 			</div>
 			<h2 class="popular__title">Монопады для селфи</h2>
-		</article>
-		<article class="popular__item">
+		</a>
+		<a href="#" class="popular__item">
 			<div class="popular__img-wrap">
 				<div class="popular__img popular__img_camera"></div>
 			</div>
 			<h2 class="popular__title">Экшн-камеры</h2>
-		</article>
-		<article class="popular__item">
+		</a>
+		<a href="#" class="popular__item">
 			<div class="popular__img-wrap">
 				<div class="popular__img popular__img_fitb"></div>
 			</div>
 			<h2 class="popular__title">Фитнесс браслеты</h2>
-		</article>
-		<article class="popular__item">
+		</a>
+		<a href="#" class="popular__item">
 			<div class="popular__img-wrap">
 				<div class="popular__img popular__img_sc"></div>
 			</div>
 			<h2 class="popular__title">Умные часы</h2>
-		</article>
-		<article class="popular__item">
+		</a>
+		<a href="#" class="popular__item">
 			<div class="popular__img-wrap">
 				<div class="popular__img popular__img_quadcopter"></div>
 			</div>
 			<h2 class="popular__title">Квадрокоптеры</h2>
-		</article>
+		</a>
 	</section>
+
 	<section class="services">
 		<div class="services__wrap">
 			<input class="services__r" type="radio" name="tab-services" id="tab-services-1" checked>
 			<input class="services__r" type="radio" name="tab-services" id="tab-services-2">
 			<input class="services__r" type="radio" name="tab-services" id="tab-services-3">
+			
 			<div class="sv-rb services__sv-rb">
 				<article class="sv-rb__item sv-rb__item_delivery">
 					<h3 class="sv-rb__title">Доставка</h3>
@@ -196,28 +204,142 @@
 					</div>
 				</article>
 			</div>
+
 			<div class="sv-lb services__sv-lb">
 				<label class="sv-lb__item" for="tab-services-1"><span class="sv-lb__txt">Доставка</span></label>
 				<label class="sv-lb__item" for="tab-services-2"><span class="sv-lb__txt">Гарантия</span></label>
 				<label class="sv-lb__item" for="tab-services-3"><span class="sv-lb__txt">Кредит</span></label>
 			</div> 
+
 		</div>
 	</section>
+
 	<section class="logotypes">
-		<div class="logotypes__item">
+		<a href="#" class="logotypes__item">
 			<img src="./img/logotypes1.jpg" alt="">
-		</div>
-		<div class="logotypes__item">
+		</a>
+		<a href="#" class="logotypes__item">
 			<img src="./img/logotypes2.jpg" alt="">
-		</div>
-		<div class="logotypes__item">
+		</a>
+		<a href="#" class="logotypes__item">
 			<img src="./img/logotypes3.jpg" alt="">
-		</div>
-		<div class="logotypes__item">
+		</a>
+		<a href="#" class="logotypes__item">
 			<img src="./img/logotypes4.jpg" alt="">
-		</div>
+		</a>
 	</section>
-	<label class="a" for="tab-services-3"><span>Доставка</span></label>
+
+	<section class="information">
+		<article class="info information__info">
+			<header class="info__title-wrap">
+				<h3 class="info__title">О нас</h3>
+			</header>
+			<div class="info__description">
+				<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+				<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+				<ul class="list info__list">
+					<li class="list__item">Деловые Линии</li>
+					<li class="list__item">Автотрейдинг</li>
+					<li class="list__item">ЖелДорЭкспедиция</li>
+				</ul>
+				<a href="#" class="btn info__btn"><span class="btn__txt">Подробнее о нас</span></a>
+			</div>
+		</article>
+		<article class="info information__info">
+			<header class="info__title-wrap">
+				<h3 class="info__title">Контакты</h3>
+			</header>
+			<div class="info__description">
+				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+				<img id="map-img" class="info__img" src="img/map.jpg" alt="">
+				<button id="wu" class="btn info__btn"><span class="btn__txt">Напишите нам</span></button>
+			</div>
+		</article>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__body">
+			<div class="f-panel footer__f-panel">
+				<div class="logo f-panel__logo">
+					<a href="#" class="logo__text">Device</a>
+				</div>
+				<div class="user-panel f-panel__user-panel">
+					<a class="user-panel__item user-panel__item_enter" href="#">Войти</a>
+					<a class="user-panel__item user-panel__item_compare" href="#">Сравнить</a>
+					<a class="user-panel__item user-panel__item_cart" href="#">Корзина</a>
+				</div>
+			</div>
+
+			<div class="f-panel-info footer__f-pane-linfo ">
+				<div class="address f-panel-info__address">
+					<span>г. Москва, ул. Строителей, 15</span>
+				</div>
+				<div class="info-menu f-panel-info__info-menu">
+					<a class="info-menu__item" href="#">Доставка</a>
+					<a class="info-menu__item" href="#">Гарантия</a>
+					<a class="info-menu__item" href="#">Контакты</a>
+				</div>
+				<div class="tel f-panel-info__tel">
+					<span>Тел.: +7 (495) 495-95-95</span>
+				</div>
+			</div>
+			
+			<div class="f-panel-social footer__f-panel-social ">
+				<div class="box-deсor f-panel-social__box-deсor">
+					<div class="box-deсor__item"></div>
+				</div>
+				<div class="social-menu f-panel-social__social-menu">
+					<a class="social-menu__item social-menu__item_fb" href="#"></a>
+					<a class="social-menu__item social-menu__item_inst" href="#"></a>
+					<a class="social-menu__item social-menu__item_tw" href="#"></a>
+				</div>
+				<div class="author f-panel-social__author">
+					<a class="author__item" href="#"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="popup">
+		<div id="popup-map" class="popup__wrap">
+			<div id="map"></div>
+			<div class="popup__close" tabindex="0"></div>
+		</div>
+		<div id="popup-wu" class="popup__wrap">
+			<div class="write-us popup__write-us">
+				<form class="write-us__form" action="#" method="post">
+					<div class="write-us__first-line">
+						<div class="write-us__name-block">
+							<label class="write-us__label" for="wu-name">Ваше имя:</label>
+							<input class="write-us__txt" type="text" name="wu-name" id="wu-name" placeholder="Представьтесь, пожалуйста">
+						</div>
+						<div class="write-us__email-block">
+							<label class="write-us__label" for="wu-email">Ваш e-mail:</label>
+							<input class="write-us__txt" type="text" name="wu-email" id="wu-email" placeholder="Для отправки ответа">
+						</div>
+					</div>
+					<div class="write-us__text-letter">
+						<label class="write-us__label" for="wu-text">Текст письма:</label>
+						<textarea class="write-us__textarea" name="wu-text" id="wu-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+					</div>
+					<div class="btn write-us__btn"><span class="btn__txt">Подробнее</span></div>
+				</form>
+			</div>
+			<div class="popup__close" tabindex="0"></div>
+		</div>
+	</div>
+	<script>
+		var map;
+		function initMap() {
+			var uluru = {lat: 55.687046, lng: 37.529609};
+			map = new google.maps.Map(document.getElementById('map'), {
+				center: uluru,
+				zoom: 15
+			});
+			var marker = new google.maps.Marker({position: uluru, map: map});
+		}
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNm5D8kSycyPY0pa1dJJ3nwHJkN-62Ga0&callback=initMap"
+    async defer></script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
